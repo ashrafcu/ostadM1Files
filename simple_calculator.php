@@ -46,7 +46,7 @@
                                     <select name="calculation" class="form-select" aria-label="Default select">
                                     <option selected>Please select an option from here</option>
                                     <option value="add">Addition</option>
-                                    <option value="subtract">Subtraction</option>
+                                    <option value="substract">Substraction</option>
                                     <option value="multiply">Multiplication</option>
                                     <option value="divide">Division</option>
                             </select>
@@ -63,38 +63,30 @@
                                 </div>
                             </div>
                             <div id="result">
-                                <?php 
-                                if($_SERVER["REQUEST_METHOD"]== "POST") {
+                            <?php 
+                                if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                 $numOne = $_POST["number1"];
                                 $numTwo = $_POST["number2"];
                                 $calculate = $_POST["calculation"];
-                                switch ($calculate) {
-                                    case "add" : $result = $numOne + $numTwo;
-                                    echo "The result is $result";
-                                    break;
-                                    case "subtract" : $result = $numOne - $numTwo;
-                                    echo "The result is $result";
-                                    break;
-                                    case "multiply": $result = $numOne * $numTwo;
-                                    echo "The result is $result";
-                                    break;
-                                    case "divide": 
-                                      if ($numTwo != 0) {
-                                        $result = $numOne/$numTwo;
-                                        echo "The result is $result";
-                                      } else {
-                                        echo "The result is &#8734;";
-                                      }
-                                    break;
-                                    default:
-                                    echo "This is not a valid number. Please select the right operator from the menu.";
-                                  }
-            }
-                            
 
-
-
-
+                                if ("add"== $calculate) {
+                                    $result = $numOne + $numTwo;
+                                    echo "The result is $result.";
+                                } elseif ("substract"==$calculate){
+                                    $result = $numOne - $numTwo;
+                                    echo "The result is $result.";
+                                } elseif ("multiply"==$calculate){
+                                    $result = $numOne * $numTwo;
+                                    echo "The result is $result.";
+                                } elseif ("divide"==$calculate) {
+                                    if($numTwo!=0){
+                                        $result=$numOne/$numTwo; 
+                                        echo "The result is $result.";
+                                    } else {
+                                        echo "The result is &#8734.";
+                                    }
+                                } else {echo "This is not a valid number. Please select the right operator from the menu.";}
+                            }
             ?>
 
           </div>
