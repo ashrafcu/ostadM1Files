@@ -26,15 +26,18 @@
                         <form method="post" action="">
                             <input type="number" name="numberOne" placeholder="Type First Number" required><br/>
                             <input type="number" name="numberTwo" placeholder="Type Second Number" required><br/>
-                            <button type="submit">Which one is larger?</button>
+                            <div class="btn-group" role="group" aria-label="Submit Buttons">
+                                <button type="submit" class="btn btn-secondary">Which one is larger?</button>
+                                <button type="reset">Change the Numbers</button>
+                            </div>
                         </form>
                         <div id="result">
                         <?php 
                         if($_SERVER["REQUEST_METHOD"]== "POST") {
                             $numberOne = $_POST["numberOne"];
                             $numberTwo= $_POST["numberTwo"];
-                            $largerNumber= ($numberOne>$numberTwo) ? "The larger number is $numberOne": (($numberOne<$numberTwo)? "The larger number is $numberTwo":"The numbers are equal.");
                         }
+                        $largerNumber= ($numberOne>$numberTwo) ? "The larger number is $numberOne": (($numberOne<$numberTwo)? "The larger number is $numberTwo":"The numbers are equal.");
                         echo $largerNumber;
                         ?>
                         </div>
