@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Comparison Tool</title>
+    <title>Comparison Tool | Ostad APP</title>
     <style>
         <?php include "main.css" ?>
         <?php include "bootstrap.min.css?ver=1.2.0" ?>
-        <?php include "main.css?ver=1.2.0" ?>
     </style>
 </head>
 
@@ -18,7 +17,7 @@
             <div class="cover-container">
                 <div class="masthead clearfix">
                     <div class="inner">
-                        <h2 class="masthead-brand">Comparison Tool</h2>
+                        <h2 class="masthead-brand">Comparison Tool | Ostad APP</h2>
                     </div>
                 </div>
                 <div class="inner cover">
@@ -27,7 +26,7 @@
                             <input type="number" name="numberOne" placeholder="Please Type the First Number" required><br/>
                             <input type="number" name="numberTwo" placeholder="Please Type the Second Number" required><br/>
                                 <button type="submit">Which one is larger?</button> <br/></br/>
-                                <button type="reset">Change the Numbers</button>
+                                <button type="reset" class="btn btn-warning">Change the Numbers</button>
                         </form>
                         <div id="result">
                         <?php 

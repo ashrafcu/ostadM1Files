@@ -22,9 +22,12 @@ body {
 
   .container{
     margin: 50px auto;
-    width: 300px;
+    width: 500px;
   }
 
+  .personal-info-text {
+    font-size: 1.8em;
+  }
   input[type], select {
     width: 100%;
     padding: 8px;

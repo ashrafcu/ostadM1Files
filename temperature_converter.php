@@ -13,8 +13,7 @@
     </noscript>
     <style>
     <?php include "main.css" ?>
-    <?php //include "bootstrap.min.css?ver=1.2.0" ?>
-    <?php //include "main.css?ver=1.2.0" ?>
+    <?php include "bootstrap.min.css?ver=1.2.0" ?>
     </style>
   </head>
   <body id="top">

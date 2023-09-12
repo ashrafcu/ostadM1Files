@@ -13,9 +13,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap" />
     </noscript>
     <style>
-        <?php include "main.css" ?><?php //include "bootstrap.min.css?ver=1.2.0" 
-                                    ?><?php //include "main.css?ver=1.2.0" 
-                                        ?>
+        <?php include "main.css" ?>
+        <?php include "bootstrap.min.css?ver=1.2.0"?>
     </style>
 </head>
 
@@ -25,7 +24,7 @@
             <div class="cover-container">
                 <div class="masthead clearfix">
                     <div class="inner">
-                        <h2 class="masthead-brand">Grade Calculator</h2>
+                        <h2 class="masthead-brand">Grade Calculator | Ostad APP</h2>
 
                     </div>
                 </div>
