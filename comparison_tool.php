@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Comparison Tool</title>
     <style>
-        <?php include "css/main.css" ?>
-        <?php include "css/bootstrap.min.css?ver=1.2.0" ?>
-        <?php include "css/main.css?ver=1.2.0" ?>
+        <?php include "main.css" ?>
+        <?php include "bootstrap.min.css?ver=1.2.0" ?>
+        <?php include "main.css?ver=1.2.0" ?>
     </style>
 </head>
 
@@ -18,18 +18,16 @@
             <div class="cover-container">
                 <div class="masthead clearfix">
                     <div class="inner">
-                        <h3 class="masthead-brand">Comparison Tool</h3>
+                        <h2 class="masthead-brand">Comparison Tool</h2>
                     </div>
                 </div>
                 <div class="inner cover">
                     <div class="container">
                         <form method="post" action="">
-                            <input type="number" name="numberOne" placeholder="Type First Number" required><br/>
-                            <input type="number" name="numberTwo" placeholder="Type Second Number" required><br/>
-                            <div class="btn-group" role="group" aria-label="Submit Buttons">
-                                <button type="submit" class="btn btn-secondary">Which one is larger?</button>
+                            <input type="number" name="numberOne" placeholder="Please Type the First Number" required><br/>
+                            <input type="number" name="numberTwo" placeholder="Please Type the Second Number" required><br/>
+                                <button type="submit">Which one is larger?</button> <br/></br/>
                                 <button type="reset">Change the Numbers</button>
-                            </div>
                         </form>
                         <div id="result">
                         <?php 
@@ -50,5 +48,8 @@
                 </div>
             </div>
         </div>
-</body>
+    <script src="jquery.slim.min.js?ver=1.2.0"></script>
+    <script src="bootstrap.bundle.min.js?ver=1.2.0"></script>
+    <script src="main.js?ver=1.2.0"></script>
+    </body>
 </html>

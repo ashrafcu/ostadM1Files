@@ -59,11 +59,9 @@ body {
   height: 100%; }
 
 body {
-  background: url(../img/cover-project.jpg) no-repeat center center fixed;
-  background-size: cover;
   color: #fff;
   text-align: center;
-  font-family: 'Quicksand', sans-serif; }
+}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
@@ -85,7 +83,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 30px; }
+  padding: 5px; }
 
 .logo-transparent {padding: 50px 0 50px 0;}
 
@@ -93,9 +91,11 @@ body {
  * Header
    */
 .masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px; }
-
+  padding-top: 30px;
+    margin: 0 25px 0 25px;
+    color: white;
+    text-shadow: 0 0 black;
+}
 
 @media (min-width: 768px) {
   .masthead-brand {
