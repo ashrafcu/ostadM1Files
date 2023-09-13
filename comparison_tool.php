@@ -33,7 +33,7 @@
                         if($_SERVER["REQUEST_METHOD"]== "POST") {
                             $numberOne = $_POST["numberOne"];
                             $numberTwo= $_POST["numberTwo"];
-                            $largerNumber= ($numberOne>$numberTwo) ? "The larger number is $numberOne": (($numberOne<$numberTwo)? "The larger number is $numberTwo":"The numbers are equal.");
+                            $largerNumber= ($numberOne>$numberTwo) ? "The larger number is $numberOne.": (($numberOne<$numberTwo)? "The larger number is $numberTwo.":"The numbers are equal.");
                             echo $largerNumber;
                         }
                         
