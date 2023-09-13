@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Comparison Tool | Ostad APP</title>
     <style>
-        <?php include "main.css" ?>
-        <?php include "bootstrap.min.css?ver=1.2.0" ?>
+        <?php include "main.css"; ?>
+        <?php include "bootstrap.min.css?ver=1.2.0"; ?>
     </style>
 </head>
 

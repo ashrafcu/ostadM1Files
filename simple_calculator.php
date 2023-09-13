@@ -13,8 +13,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&amp;display=swap" />
     </noscript>
     <style>
-        <?php include "main.css" ?>
-        <?php include "bootstrap.min.css?ver=1.2.0"?>
+        <?php include "main.css"; ?>
+        <?php include "bootstrap.min.css?ver=1.2.0"; ?>
     </style>
 </head>
 
