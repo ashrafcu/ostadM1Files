@@ -28,11 +28,12 @@
                                 <button type="submit">Is it an even or odd number?</button> <br/></br/>
                                 <button type="reset">Reset the Number</button>
                         </form>
+                        
                         <div id="result">
                         <?php 
                         if($_SERVER["REQUEST_METHOD"]== "POST") {
                             $numberData = $_POST["numberData"];
-                            $numberChecker= (0==$numberData % 2) ? "$numberData is an even number":"$numberData is an odd number.";
+                            $numberChecker= (0==$numberData % 2) ? "$numberData is an even number.":"$numberData is an odd number.";
                             echo $numberChecker;
                         }
                         
